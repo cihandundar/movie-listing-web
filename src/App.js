@@ -10,7 +10,7 @@ import "./styles/main.scss";
 function App() {
   return (
     <BrowserRouter>
-      <div className="app">
+      <div className="App">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
