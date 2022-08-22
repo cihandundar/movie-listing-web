@@ -9,4 +9,26 @@
       font-size: 64px;
     }
   }
+  &__wrapper {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    > input {
+      background: none;
+      border: none;
+      outline: none;
+      width: 345px;
+      height: 65px;
+      border: 1px solid gray;
+      border-radius: 12px;
+    }
+    ::placeholder {
+      padding-left: 50px;
+    }
+  }
+  &__icon {
+    position: absolute;
+    left: 10px;
+  }
 }
