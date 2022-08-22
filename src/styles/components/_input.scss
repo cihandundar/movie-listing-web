@@ -1,0 +1,12 @@
+.input {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__title {
+    > h2 {
+      color: #f9f9f9;
+      font-size: 64px;
+    }
+  }
+}

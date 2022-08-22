@@ -4,7 +4,7 @@ import Input from "../components/Input";
 const Home = () => {
   return (
     <div className="home">
-      <Input />
+      <Input title="Movies" />
     </div>
   );
 };
