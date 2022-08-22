@@ -23,7 +23,7 @@ const Content = () => {
               <img src={IMG_API + card.poster_path} alt={card.poster_path} />
             </div>
             <div className="section__card__title">
-              <h2>{card.title}</h2>
+              <h3>{card.title}</h3>
             </div>
             <div className="section__card__vote">
               <Star />

@@ -1,0 +1,56 @@
+.section {
+  padding: 30px 0;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__card {
+    position: relative;
+    width: 282px;
+    height: 480px;
+    margin: 9px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    &__img {
+      padding: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+      }
+    }
+    &__title {
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 10px;
+        padding-left: 15px;
+        color: #f9f9f9;
+      }
+    }
+    &__vote {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 5px 10px;
+      border-radius: 12px;
+      p {
+        padding-left: 8px;
+        color: #99682c;
+        font-size: 16px;
+      }
+    }
+  }
+}
