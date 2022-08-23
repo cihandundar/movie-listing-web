@@ -2,6 +2,13 @@
   &__container {
     max-width: 1200px;
     margin: 0 auto;
+    @include breakpoint(lg) {
+      max-width: 900px;
+    }
+    @include breakpoint(md) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__title {
     > h2 {

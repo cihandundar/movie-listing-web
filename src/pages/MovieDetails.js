@@ -31,8 +31,8 @@ const MovieDetails = () => {
               <p>Movies</p>
               <h2>{movieData.title}</h2>
             </div>
-            <div className="details__col">
-              <p style={{ fontSize: "20px" }}>{movieData.overview}</p>
+            <div className="details__col details__overview">
+              <p>{movieData.overview}</p>
             </div>
             <div className="details__col details__vote">
               <Star />

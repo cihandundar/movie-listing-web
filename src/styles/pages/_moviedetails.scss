@@ -3,14 +3,19 @@
   &__container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include breakpoint(lg) {
+      max-width: 900px;
+    }
   }
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include breakpoint(lg) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
   }
   &__img {
     width: 480px;
@@ -22,17 +27,26 @@
     }
   }
   &__vote {
-    background: rgba(0, 0, 0, 0.5);
-    width: 90px;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.9);
     padding: 5px 5px;
     border-radius: 12px;
+    @include breakpoint(lg) {
+      display: flex;
+      justify-content: center;
+    }
     p {
       padding-left: 8px;
       padding-top: 5px;
       font-size: 16px;
+    }
+  }
+  &__overview {
+    p {
+      font-size: 20px;
+      @include breakpoint(md) {
+        font-size: 16px;
+      }
     }
   }
   &__col {

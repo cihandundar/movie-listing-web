@@ -6,6 +6,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include breakpoint(lg) {
+      max-width: 900px;
+    }
+    @include breakpoint(md) {
+      max-width: 600px;
+    }
   }
   &__list {
     display: flex;
