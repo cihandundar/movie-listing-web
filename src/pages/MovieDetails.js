@@ -15,7 +15,11 @@ const MovieDetails = () => {
   }, []);
   console.log(movieData);
 
-  return <div>{movieData.title}</div>;
+  return (
+    <div className="details">
+      <div className="details__container"></div>
+    </div>
+  );
 };
 
 export default MovieDetails;
