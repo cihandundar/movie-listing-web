@@ -1,7 +1,12 @@
 import React from "react";
+import Content from "../components/Content";
 
 const Movie = () => {
-  return <div>Movie</div>;
+  return (
+    <React.Fragment>
+      <Content />
+    </React.Fragment>
+  );
 };
 
 export default Movie;
