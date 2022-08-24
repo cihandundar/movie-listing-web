@@ -9,14 +9,11 @@ import "./styles/main.scss";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Navbar />
-
-        <Switch>
-          <Route exact path="/" component={Movie} />
-          <Route path="/movie/:id" component={MovieDetails} />
-        </Switch>
-      </div>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Movie} />
+        <Route path="/movie/:id" component={MovieDetails} />
+      </Switch>
     </BrowserRouter>
   );
 }
