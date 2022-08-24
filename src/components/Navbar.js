@@ -31,8 +31,8 @@ const Navbar = () => {
     <nav className="nav">
       <div ref={navRef} className="nav__container">
         <div className="nav__logo">
-          <Link to="/">
-            <img src={Logo} alt="" onClick={showNavbar} />
+          <Link to="/" onClick={showNavbar}>
+            <img src={Logo} alt="" />
           </Link>
         </div>
         <ul className="nav__list">
