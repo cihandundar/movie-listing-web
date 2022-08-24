@@ -1,4 +1,7 @@
 .input {
+  @include breakpoint(sm) {
+    margin-top: 80px;
+  }
   &__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,6 +24,10 @@
     display: flex;
     align-items: center;
     position: relative;
+    @include breakpoint(xs) {
+      width: 100%;
+      padding-inline: 30px;
+    }
     > input {
       background: none;
       border: none;
@@ -29,6 +36,10 @@
       height: 65px;
       border: 1px solid gray;
       border-radius: 12px;
+      @include breakpoint(xs) {
+        width: 100%;
+        position: relative;
+      }
     }
     ::placeholder {
       padding-left: 50px;
@@ -37,5 +48,9 @@
   &__icon {
     position: absolute;
     left: 10px;
+    @include breakpoint(xs) {
+      width: 100%;
+      padding-inline: 30px;
+    }
   }
 }
