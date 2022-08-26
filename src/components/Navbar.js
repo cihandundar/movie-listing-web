@@ -14,16 +14,19 @@ const Navbar = () => {
     {
       id: 1,
       name: "Movies",
+      path: "/",
     },
 
     {
       id: 2,
       name: "TV Shows",
+      path: "/tv-shows",
     },
 
     {
       id: 3,
       name: "Sign in",
+      path: "/",
     },
   ];
 
@@ -38,7 +41,7 @@ const Navbar = () => {
         <ul className="nav__list">
           {links.map((item) => (
             <li key={item.id} className="nav__link" onClick={showNavbar}>
-              <Link to="/">{item.name}</Link>
+              <Link to={item.path}>{item.name}</Link>
             </li>
           ))}
         </ul>
