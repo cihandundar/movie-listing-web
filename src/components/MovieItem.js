@@ -7,13 +7,24 @@ const Content = () => {
   const [movie, setMovie] = useState([]);
   const IMG_API = "https://image.tmdb.org/t/p/w1280";
 
+  const [page, setPage] = useState(1);
+
+  const next = () => {
+    setPage(page + 1);
+  };
+  const prev = () => {
+    setPage(page - 1);
+  };
+
   useEffect(() => {
     axios
       .get(
-        "https://api.themoviedb.org/3/movie/popular?api_key=ccb0a8566b23ab43471cda53fed3d9e7&language=en-US&page=1"
+        `https://api.themoviedb.org/3/movie/popular?api_key=ccb0a8566b23ab43471cda53fed3d9e7&language=en-US&page=${page}`
       )
       .then((response) => setMovie(response.data.results));
-  }, []);
+  }, [page]);
+
+  console.log(page);
 
   return (
     <section className="section">
@@ -34,6 +45,14 @@ const Content = () => {
             </div>
           </Link>
         ))}
+        <div className="section__btn">
+          <button className="next" onClick={prev} type="button">
+            Prev
+          </button>
+          <button className="prev" onClick={next} type="button">
+            Next
+          </button>
+        </div>
       </div>
     </section>
   );

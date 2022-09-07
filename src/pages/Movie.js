@@ -1,11 +1,11 @@
 import React from "react";
-import Content from "../components/Content";
+import MovieItem from "../components/MovieItem";
 import Input from "../components/Input";
 const Movie = () => {
   return (
     <React.Fragment>
       <Input />
-      <Content />
+      <MovieItem />
     </React.Fragment>
   );
 };
