@@ -62,7 +62,26 @@
     justify-content: space-between;
     padding: 15px;
     button {
+      border-radius: 5px;
+      background: rgba(0, 0, 0.1);
+      border: 1px solid #f9f9f9;
+      color: #f9f9f9;
       padding: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+    @include breakpoint(lg) {
+      max-width: 900px;
+    }
+    @include breakpoint(md) {
+      max-width: 600px;
+    }
+    @include breakpoint(sm) {
+      display: flex;
+      justify-content: space-around;
     }
   }
 }
